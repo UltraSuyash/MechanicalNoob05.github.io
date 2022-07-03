@@ -1,37 +1,59 @@
+const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random"
+const quoteDisplayElement = document.getElementById('quoteDisplay')
+const quoteInputElement = document.getElementById('quoteInput')
+const timerElement = document.getElementById('timer')
 
-class DigitalClock{
-	constructor(element){
-		this.element = element;
-		console.log(this.element);
-	}
-	start(){
-		this.update();
-		setInterval(() => {
-			this.update();
-		}, 500);
-	}
-	update(){
-		const parts = this.getTimeParts();
-		const minuteFormatted = parts.minute.toString().padStart(2, "0");
-		const timeFormatted = `${parts.hour}:${minuteFormatted}`;
-		const ampm = parts.isAm ? "AM" : "PM";
-		this.element.querySelector(".clock-time").textContent = timeFormatted;
-		this.element.querySelector(".AMPM").textContent = ampm;
-	}
-	getTimeParts(){
-		const now = new Date();
-		
-		return{
-			hour: now.getHours() % 12 || 12,
-			minute: now.getMinutes(),
-			isAm: now.getHours() < 12
-		};
-	}
+quoteInputElement.addEventListener('input', () => {
+  const arrayQuote = quoteDisplayElement.querySelectorAll('span')
+  const arrayValue = quoteInputElement.value.split('')
+  let correct = true
+  arrayQuote.forEach((characterSpan, index) => {
+    const character = arrayValue[index]
+    if(character == null){
+      characterSpan.classList.remove('correct')
+      characterSpan.classList.remove('incorrect')
+      correct = false
+    } else if (character === characterSpan.innerText){
+      characterSpan.classList.add('correct')
+      characterSpan.classList.remove('incorrect')
+    } else {
+      characterSpan.classList.remove('correct')
+      characterSpan.classList.add('incorrect')
+      correct = false
+    }
+  })
+  if (correct) renderNewQuote()
+})
+
+function getRandomQuote() {
+  return fetch(RANDOM_QUOTE_API_URL)
+  .then(response => response.json())
+  .then(data => data.content)
 }
-const clockElement = document.querySelector(".clock");
-const clockObject = new DigitalClock(clockElement);
+async function renderNewQuote() {
+  const quote = await getRandomQuote()
+  quoteDisplayElement.innerHTML = ''
+  quote.split('').forEach(character =>{
+    const characterSpan = document.createElement('span')
+    characterSpan.innerText = character
+    quoteDisplayElement.appendChild(characterSpan)
 
-console.log(clockObject.getTimeParts());
-clockObject.start();
+  })
+  quoteInputElement.value = null
+  startTimer()
+}
 
+let startTime
+function startTimer() {
+  timerElement.innerText = 0
+  startTime = new Date()
+  setInterval(() => {
+    timer.innerText = getTimerTime()
+  }, 1000)
+}
 
+function getTimerTime() {
+ return Math.floor((new Date() - startTime)/1000) 
+}
+
+renderNewQuote()
