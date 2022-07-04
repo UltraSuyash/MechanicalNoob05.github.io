@@ -20,6 +20,45 @@ body, .quote-input {
   width: 700px;
   max-width: 90%;
 }
+.nav-container{
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container h4{
+  color: blue;
+  text-align: center;
+}
+.navbar{
+  background: white;
+  padding: 0 20px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+.nav-container:hover .navbar ul{
+  display: block;
+}
+.navbar ul{
+  display: none;
+  padding: 5px;
+  list-style: none;
+  text-decoration: none;
+  border: 2px solid;
+  margin: 5px;
+  border-radius: 5px;
+}
+.navbar ul li{
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 3px;
+  margin: 2px;
+  width: 150px;
+}
+
+
 .timer{
   position: absolute;
   top: 3rem;
