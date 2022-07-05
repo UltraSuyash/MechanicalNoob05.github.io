@@ -32,18 +32,17 @@ body, .quote-input {
   text-align: center;
 }
 .navbar{
-  background: white;
-  padding: 0 20px;
+  background:#06283DB3;  
   border-radius: 5px;
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 .nav-container:hover .navbar ul{
   display: block;
 }
 .navbar ul{
   display: none;
-  padding: 5px;
+  padding: 1px;
   list-style: none;
   text-decoration: none;
   border: 2px solid;
@@ -51,13 +50,25 @@ body, .quote-input {
   border-radius: 5px;
 }
 .navbar ul li{
+  text-align: center;
   border-radius: 5px;
   border: 2px solid;
   padding: 3px;
   margin: 2px;
   width: 150px;
 }
-
+ul {
+  color: black;
+}
+li{
+  color: black;
+  background: black;
+}
+a{
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+}
 
 .timer{
   position: absolute;
