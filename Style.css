@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body{
+  background: url(empty\ room.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,4 +105,53 @@ a{
 .incorrect{
   color: red;
   text-decoration: underline;
+}
+.counter{
+  margin: 3px;
+  padding: 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: red;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+.counter h3{
+  color: black;
+}
+.error-container{
+  margin: 5px;
+  padding: 5px;
+  background: royalblue;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.sentence{
+  margin: 3px;
+  padding: 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: green;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+.sentence h3{
+  color: black;
+  font-size: 15px;
+}
+.average{
+  margin: 3px;
+  padding: 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: rebeccapurple;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+.average h3{
+  color: black;
 }
