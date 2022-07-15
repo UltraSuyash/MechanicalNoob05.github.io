@@ -118,6 +118,7 @@ a{
 }
 .counter h3{
   color: black;
+  font-size: 15px;
 }
 .error-container{
   margin: 5px;
@@ -154,4 +155,5 @@ a{
 }
 .average h3{
   color: black;
+  font-size: 15px;
 }
