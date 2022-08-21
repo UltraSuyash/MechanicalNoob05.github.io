@@ -1,6 +1,78 @@
-.pics{
-  width:100%;
+nav{
+  display:block;
+  background:grey;
+  padding:10px;
+  border-radius:10px;
+}
+a{
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+}
+li{
+  list-style-type: none;
+}
+ul{
+  position: relative;
+  margin: auto;
+}
+.foot{
+  background:black;
+  padding:10px;
+  display:flex;
+  flex-direction:rows;
+  border-radius:10px;
+}
+.foot_left{
+  background:grey;
+  width:20%;
+  border-radius:10px;
+  margin:2px;
+}
+.foot_right{
+  background:grey;
+  width:80%;
+  border-radius:10px;
+  margin:2px;
+}
+.foot_left_content{
+  padding:20px;
+  position:relative;
+  margin:auto;
+}
+section{
+  padding:10px;
 }
 .Edu{
-  height: 20%;
+  background:green;
+  margin:3px;
+  border-radius:10px;
 }
+.Exp{
+  background:yellow;
+  margin:3px;
+  border-radius:10px;
+}
+.Pro{
+  background:pink;
+  margin:3px;
+  border-radius:10px;
+}
+input{
+  width:100%;
+}
+.project{
+  display:flex;
+  flex-direction:rows;
+}
+.project_left{
+  background:white;
+  width:40%;
+  padding: 10px;
+}
+.project_right{
+  background:white;
+  width:60%;
+  padding:10px;
+}
+
