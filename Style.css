@@ -1,92 +1,40 @@
-nav{
-  display:block;
+.jumbo{
+  display: flex;
+  justify-content: center;
+  min-height: 250px;
+  flex-direction:column;
+  position: relative;
+  margin: auto;
   background:grey;
-  padding:10px;
-  border-radius:10px;
+  padding: 20px;
 }
-a{
-  text-decoration:none;
-  color:white;
-  font-size:20px;
+.pro-container{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
 }
-li{
-  list-style-type: none;
-}
-ul{
+.page{
   position: relative;
   margin: auto;
 }
-.foot{
-  background:black;
-  padding:10px;
-  display:flex;
-  flex-direction:rows;
+.box{
+  min-height:400px;
+}
+.view{
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid brown;
+  border-radius:8px;
+}
+.page-item button{
+  background:white;
+  color: blue;
+  width:100px;
   border-radius:10px;
+  padding: 5px;
+  margin: 5px;
 }
-.foot_left{
-  background:grey;
-  width:20%;
-  border-radius:10px;
-  margin:2px;
-}
-.foot_right{
-  background:grey;
-  width:80%;
-  border-radius:10px;
-  margin:2px;
-}
-.foot_left_content{
-  padding:20px;
-  position:relative;
-  margin:auto;
-}
-section{
-  padding:10px;
-  min-height: 500px;
-}
-.Edu{
-  background:green;
-  margin:3px;
-  border-radius:10px;
-}
-.Exp{
+.page-item button:hover{
   background:yellow;
-  margin:3px;
-  border-radius:10px;
+  color: green;
 }
-.Pro{
-  background:pink;
-  margin:3px;
-  border-radius:10px;
-}
-input{
-  width:100%;
-  border-radius:5px;
-}
-.project{
-  display:flex;
-  flex-direction:rows;
-}
-.project_left{
-  background:white;
-  width:40%;
-  padding: 10px;
-  object-fit:cover;
-  margin: 2px;
-  border-radius:10px;
-}
-.project_right{
-  background:white;
-  width:60%;
-  padding:10px;
-  margin: 2px;
-  border-radius:10px;
-}
-.project_right a{
-  color: black;
-}
-img{
-  width: 100%;
-  border-radius:10px;
-}
-
