@@ -38,13 +38,30 @@
   background:yellow;
   color: green;
 }
-.container{
+.view{
   display: flex;
   flex-direction:row;
 }
 .left{
-  width:30%;
+  width:40%;
+  padding: 5px;
 }
 .right{
-  width:70%;
+  width:60%;
+  padding: 5px;
+}
+.left img{
+  border-radius:8px;
+  height: 100%;
+  width: 100%;
+}
+.title{
+  padding:10px;
+  border-radius:8px;
+}
+.title:hover{
+  background:grey;
+}
+.para{
+  padding:10px;
 }
