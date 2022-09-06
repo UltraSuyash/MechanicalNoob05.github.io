@@ -63,10 +63,12 @@ function archive(){
     view.removeChild(view.lastChild)
   }
   var list = document.createElement('ul')
+  list.classList.add('list-group')
   view.appendChild(list)
   for( let i = 0; i<3; i++){
     var listItem= document.createElement('li')
     listItem.id = 'test'+i
+    listItem.classList.add('list-group-item')
     list.appendChild(listItem)
   }
   for( let i = 0; i<3; i++){

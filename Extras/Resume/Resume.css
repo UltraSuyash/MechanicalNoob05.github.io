@@ -1,5 +1,5 @@
 body{
-  background: yellow;
+  background: #9CD3D8;
 }
 .page{
   display: flex;
@@ -10,14 +10,14 @@ body{
   height: auto;
 }
 .left{
-  background:blue;
+  background:#0B698B;
   width: 30%;
   padding: 10px;
   display: flex;
   flex-direction:column;
 }
 .right{
-  background:white;
+  background:#F2F2F2;
   width: 70%;
 }
 .content{
@@ -44,11 +44,23 @@ a{
   color: black;
 }
 h3{
-  background:grey;
-  padding:2px;
+  background:#0396A6;
+  padding:5px;
   border-radius:5px;
+}
+.left h3{
+  background: #F2F2F2;
 }
 li{
   padding: 5px;
   font-size:20px;
+}
+.right p{
+  padding:5px;
+}
+h2{
+  text-align: center;
+}
+.prof p{
+  text-align: center;
 }
