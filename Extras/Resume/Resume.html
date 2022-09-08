@@ -6,70 +6,118 @@
     <link rel="stylesheet" type="text/css" href="Resume.css">
   </head>
   <body>
-    <div class="container">
-    <div class="page">
-      <div class="left">
-        <section class="prof">
-          <img src="profile.jpg" alt="">
-          <h2>Tejas Mayekar</h2>
-          <p>Fresher</p>
-        </section>
-        <section>
-          <h3>Personal info</h3>
-          <ul>
-            <li>Github<p>sadssakj</p></li>
-            <li>Email <p>sdjhksj@skdlak.com</p></li>
-            <li>Linkedin <p><a href="#">linkedin</a></p></li>
-          </ul>
-        </section>
-        <section>
-          <h3>Skills</h3>
-          <ul>
-            <li>Quick Learning</li>
-            <li>Practical Solutions</li>
-            <li>Good listener</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Softwares</h3>
-          <ul>
-            <li>Java</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>Python</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Languages</h3>
-          <ul>
-            <li>English</li>
-            <li>German</li>
-            <li>Hindi</li>
-            <li>Marathi</li>
-          </ul>
-        </section>
-      </div>
-      <div class="right">
-        <section>
-          <h3>Introduction</h3>
-          <p>Hello, I am a young developer aiming to be a full stack developer I am currently working my way through it</p>
-        </section>
-        <section>
-          <h3>Experience</h3>
-        </section>
-        <section>
-          <h3>Education</h3>
-        </section>
-        <section>
-          <h3>Certification</h3>
-        </section>
-        <section>
-          <h3>Intrests</h3>
-        </section>
-      </div>
+    <nav>
+      <h2> Tejas Mayekar</h2><span onclick="openNav()" class="button"><img src="https://img.icons8.com/ios/50/000000/menu-2.png"/ style="width:30px; height:30px; margin:auto; position:relative;"></span>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#Introduction" onclick="closeNav()">Introduction</a>
+      <a href="#Experience" onclick="closeNav()">Experience</a>
+      <a href="#Skills" onclick="closeNav()">Skills</a>
+      <a href="#Certifications" onclick="closeNav()">Trainings</a>
+      <a href="#Education" onclick="closeNav()">Education</a>
+      <a href="#Intrests" onclick="closeNav()">Intrests</a>
+      <a href="#Contact_Info" onclick="closeNav()">Contact Info</a>
     </div>
-    </div>
- </body>
+    <section class="slate" id="Introduction">
+      <img src="profile.jpg" alt="" />
+      <div class="info">
+        <h3 id="title">Introduction</h3>
+        <p id="content">saldlsadldskadlkasdjdl</p>
+      </div>
+    </section>
+    <div class="block">
+    <section class="slate" id="Experience">
+      <div class="info">
+        <h3 id="title">Experience</h3>
+        <ul>
+          <li><b>Data Science</b><br>
+            <span class="company-name">Corizo, Virtual</span><br>
+            <span>Jul 2022 - Aug 2022</span>
+            <p>Completion of projects both indivisual as well as Group</p>
+          </li>
+          <li><b>Mechanical Engineering</b><br>
+            <span class="company-name">Godrej, Mumbai</span><br>
+            <span>May 2019 - Jun 2019</span>
+            <p>Worked as a documentation intern</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+     <section class="slate" id="Skills">
+      <div class="info">
+        <h3 id="title">Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Python</li>
+          <li>Java (Swing)</li>
+          <li>Linux</li>
+          <li>Work Sample<ul>
+               <li><a href="#">Projects.io</a></li>
+                </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+     </div>
+    <div class="block">
+     <section class="slate" id="Certifications">
+      <div class="info">
+        <h3 id="title">Trainings</h3>
+        <ul>
+          <li><b>Data Science</b><br>
+            <span class="company-name">Corizo, Online</span><br>
+            <span>Jun 2022 - Jul 2022</span>
+            <p>Basic knowledege about Data Science and tools used in it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+      <section class="slate" id="Education">
+      <div class="info">
+        <h3 id="title">Education</h3>
+        <ul>
+          <li>exp</li>
+          <li>exp</li>
+          <li>exp</li>
+          <li>exp</li>
+        </ul>
+      </div>
+    </section>
+      </div>
+    <div class="block">
+      <section class="slate" id="Intrests">
+      <div class="info">
+        <h3 id="title">Intrests</h3>
+        <ul>
+          <li>Reading</li>
+          <li>Star Gazing</li>
+          <li>Listening to Music</li>
+          <li>DIY Projects</li>
+        </ul>
+      </div>
+    </section>
+      <section class="slate" id="Contact_Info">
+      <div class="info">
+        <h3 id="title">Contact Info</h3>
+        <ul>
+          <li><a href="#">Github Profile</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+    </section>
+      </div>
+      <script type="text/javascript">
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      } 
+    </script>
+  </body>
   
 </html>
