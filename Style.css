@@ -44,11 +44,11 @@
 .view{
   margin: 10px;
   padding: 5px;
-  border: 2px solid brown;
+  border: 2px solid black;
   border-radius:8px;
 }
 .list-group-item{
-  width: 500px;
+  width: auto;
 }
 .view{
   display: flex;
@@ -58,15 +58,26 @@
   width:40%;
   height: 400px;
   padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .right{
   width:60%;
   padding: 5px;
 }
 .left img{
+  border: 2px solid black;
   border-radius:8px;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  margin: auto;
+}
+.link{
+  text-decoration: none;
+  color: green;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .title{
   padding:10px;
@@ -181,16 +192,27 @@ section{
   margin: 10px;
 }
 .another{
+  color: white;
   width: 70%;
-  background: greenyellow;
+  background: gray;
   margin: 5px;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
-ul{
-  width: 1005;
+.another ul{
+  margin: 5px;
+  list-style: none;
 }
+.another a{
+  color: whitesmoke;
+  list-style: none;
+  text-decoration: none;
+}
+
+
 @media screen and (max-width:600px){
   section{
     flex-direction: column;
