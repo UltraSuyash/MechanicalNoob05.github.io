@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="Description" content="Various small project ideas for css projects with source code" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Style.css" />
@@ -12,9 +12,9 @@
     <title>Free Projects</title>
   </head>
   <body onload="load()">
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-light" style="background:rgba(0,0,0,0);">
       <div class="container-fluid">
-        <a class="navbar-brand" href="Extras/Resume/Resume.html"><img src="finger-print-outline.svg" alt="" width="30" height="30" class="d-inline-block align-text-top"><b>Projects</b></a>
+        <span class="navbar-brand mb-0 h1"><img src="finger-print-outline.svg" alt="" width="30" height="30"><b> Projects</b></span>
       </div>
     </nav>
     <div class="jumbo">
@@ -33,7 +33,7 @@
         <ul class="pagination pagination-lg">
           <li class="page-item"><button onclick="recent()" type="button">Recent</button></li>
           <li class="page-item"><button onclick="current()" type="button">Current</button></li>
-          <li class="page-item"><button onclick="archive(4)" type="button">Archive</button></li>
+          <li class="page-item"><button onclick="archive()" type="button">Archive</button></li>
         </ul>
       </nav>
       </div>
@@ -42,7 +42,7 @@
     </div>
     <section>
       <form id="reply">
-        <label>Contact us</label>
+        <label class="firstlabel">Contact us</label>
         <input type="text" placeholder="Email" />
         <label>Comment</label>
         <textarea id="comment" placeholder="Any suggestions......."></textarea>
@@ -52,10 +52,13 @@
         <h3>Thank you!</h3>
         <p>If you have any project ideas feel free to send them in through Feedback section or through my social links below</p>
         <ul>
-          <b>Social Links</b>
           <li><a href="#">Github</a></li>
           <li><a href="#">Linkedin</a></li>
           <li><a href="#">Instagram</a></li>
+        </ul>
+        <h6>Intrested in my Qualifications</h6>
+        <ul>
+          <li><a href="Extras/Resume/Resume.html">Resume</a></li>
         </ul>
       </div>
     </section>

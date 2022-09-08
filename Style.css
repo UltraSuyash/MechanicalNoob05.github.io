@@ -1,3 +1,6 @@
+body{
+  background-image:linear-gradient(to bottom, rgba(192,192,192,0), rgba(192,192,192,1));
+}
 .jumbo{
   display: flex;
   justify-content: center;
@@ -79,12 +82,16 @@
   border: 2px solid black;
   border-radius: 5px;
 }
+.link:hover{
+  background: #c0c0c0;
+  color: black;
+}
 .title{
   padding:10px;
   border-radius:8px;
 }
 .title:hover{
-  background:grey;
+  background-image:linear-gradient(to left, rgba(192,192,192,0), rgba(192,192,192,1));
 }
 .para{
   padding:10px;
@@ -159,7 +166,12 @@ form label{
   padding: 13px 1px;
   box-sizing: border-box;
 }
-
+.firstlabel{
+  padding-top: 0px;
+}
+h6{
+  margin-top: 20px;
+}
 form button{
   width: 100px;
   margin-top: 5px;
@@ -174,6 +186,7 @@ form button{
   font-family: "Amazon Ember",sans-serif;
   font-size: 13px;
   line-height: 29px;
+  margin-top: 10px;
   padding: 0 10px 0 11px;
   position: relative;
   text-align: center;
@@ -190,11 +203,11 @@ section{
   flex-direction: row;
   padding: 5px;
   margin: 10px;
+  border-radius: 10px;
 }
 .another{
-  color: white;
+  color: black;
   width: 70%;
-  background: gray;
   margin: 5px;
   border: 2px solid black;
   border-radius: 10px;
@@ -206,8 +219,14 @@ section{
   margin: 5px;
   list-style: none;
 }
+.another li{
+  margin-top: 5px;
+}
+.another p{
+  margin-top: 20px;
+}
 .another a{
-  color: whitesmoke;
+  color: black;
   list-style: none;
   text-decoration: none;
 }
@@ -239,6 +258,9 @@ section{
   }
   .text{
     width: 100%;
+  }
+  .jumbo{
+    background-image:url("https://source.unsplash.com/random/300x200?sig=2");
   }
 }
 

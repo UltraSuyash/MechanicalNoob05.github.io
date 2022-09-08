@@ -18,11 +18,10 @@ link.innerText = 'Link to Project'
 
 
 var project = [
-  ["Typing Test","Testing if this works","room.jpg","Extras/Typing_Test/type.html"],
   ["some other project", "Hello where are u","room.jpg","Extras/Typing_Test/type.html"],
-  ["some other project", "Hello where are u","room.jpg"],
-  ["some other project", "Hello where are u","room.jpg"],
+  ["Typing Test","It is a simple web application that renders a random quote, there is an input field which is used to take user input, the value entered from the user is checked against the actual quote, there is a couter which resets as soon as you finish the task.There are various measures of performance are displayed below as soon as they are completed.","room.jpg","Extras/Typing_Test/type.html"],
 ]
+var number = project.length
 
 function load(){
    while(view.firstChild){
@@ -71,7 +70,7 @@ function current(){
   para.innerText = project[0][1]
   link.setAttribute('href',project[0][3])
 }
-function archive(number){
+function archive(){
   while(view.firstChild){
     view.removeChild(view.lastChild)
   }
