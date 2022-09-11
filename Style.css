@@ -8,7 +8,7 @@ body{
   flex-direction:column;
   position: relative;
   margin: auto;
-  background-image:url("https://source.unsplash.com/random/1600x200?sig=2");
+  background-image:url("https://picsum.photos/1600/300");
   padding: 20px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -265,7 +265,7 @@ section{
     width: 100%;
   }
   .jumbo{
-    background-image:url("https://source.unsplash.com/random/300x200?sig=2");
+    background-image:url("https://picsum.photos/400/300");
   }
   .link{
     margin-top: 5px;

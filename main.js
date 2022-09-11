@@ -122,3 +122,12 @@ function archive(){
 function random(input){
   link.setAttribute('href',project[0][3])
 }
+
+document.addEventListener("keydown", e =>{
+  if (
+    e.key.toLowerCase() === "u"
+      && e.ctrlKey
+     ){
+    alert("Thank you, This is one of the easter eggs I thought to include in.")
+  }
+})
