@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: grey;
+}
+.wrapper{
+    width: 770px;
+    padding: 10px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.content-box{
+    padding: 13px 20px 0;
+    border: 1px solid rebeccapurple;
+}
+.typing-text{
+    max-height: 225px;
+    overflow-y: auto;
+}
+.typing-test p{
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.content{
+    display: flex;
+    margin-top: 10px;
+    padding: 12px 0;
+    border-top: 2px solid black;
+    justify-content: space-between;
+}
+.result-details{
+    display: flex;
+    width: calc(100% - 180px);
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+button{
+    background: greenyellow;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    height: 30px;
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

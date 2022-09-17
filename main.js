@@ -21,7 +21,6 @@ var project = [
   //Order of adding projects is: "name","description","image","url/location"
   ["some other project", "Hello where are u","room.jpg","Extras/Typing_Test/type.html"],
   ["Typing Test","It is a simple web application that renders a random quote, there is an input field which is used to take user input, the value entered from the user is checked against the actual quote, there is a couter which resets as soon as you finish the task.There are various measures of performance are displayed below as soon as they are completed.","room.jpg","Extras/Typing_Test/type.html"],
-  ["Typing Test","It is a simple web application that renders a random quote, there is an input field which is used to take user input, the value entered from the user is checked against the actual quote, there is a couter which resets as soon as you finish the task.There are various measures of performance are displayed below as soon as they are completed.","room.jpg","#"],
 ]
 var number = project.length
 
