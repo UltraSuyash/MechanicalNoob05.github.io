@@ -131,3 +131,12 @@ document.addEventListener("keydown", e =>{
     alert("Thank you, This is one of the easter eggs I thought to include in.")
   }
 })
+document.addEventListener("keydown", e =>{
+  if (
+    e.key.toLowerCase() === "h"
+      && e.shiftKey
+     ){
+    let url = "Extras/Webpages/DSSA/DSSA.html"
+    window.location.href = url
+  }
+})

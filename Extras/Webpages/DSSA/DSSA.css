@@ -1,0 +1,58 @@
+.page-container{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    flex-direction: row;
+    height: 1000px;
+    padding: 5px;
+}
+.left-side{
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 35%;
+}
+.right-side{
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 65%;
+}
+.footer-container{
+    margin-top: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+}
+label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+.footer-left{
+    margin-right: 5px;
+    width: 35%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.footer-right{
+    margin-left:5px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+}
